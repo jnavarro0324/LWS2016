@@ -1,0 +1,23 @@
+.lw-nav {
+  margin-bottom: 0;
+  background-color: #00C3E6;
+  border-bottom: 0;
+}
+
+.lw-header {
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.lw-panel-noborder {
+	border: 0;
+	box-shadow: none;
+}
+
+.nav-logo {
+    display: block;
+    height: 50px;
+    width: 180px;
+    overflow: hidden;
+    position: relative;
+}

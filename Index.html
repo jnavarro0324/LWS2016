@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LoanWorks - Application Search</title>
+	<link rel="stylesheet" href="css/oneui.css">
+	<link rel="stylesheet" href="css/lw/lw.css">
+</head>
+<body>
+	<header>
+		<div class="navbar-header">
+			<nav class="lw-nav navbar navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<img alt="logo" src="branding_image\Douros Jackson.png" class="navbar-brand" />
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#">Processing</a>
+						</li>
+						<li>
+							<a href="#">Reports</a>
+						</li>
+						<li>
+							<a href="#">Tools</a>
+						</li>
+						<li>
+							<a href="#">Management</a>
+						</li>
+					</ul>
+
+				    <ul class="nav navbar-nav navbar-right">
+				        <li><a href="#">Home</a></li>
+				        <li><a href="#">Support</a></li>
+				        <li><a href="#">Task</a></li>
+				        <li><a href="#">Log Out</a></li>
+			     	</ul>
+				    </div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div class="lw-header"></div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12" role="main">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div style="float:left;">
+							<a data-toggle="collapse" href="#CollapsePanel1">Application Search</a>							
+						</div>
+						<div style="float:right;">
+							<button type="button" class="btn btn-primary">Search</button>
+							<button type="button" class="btn btn-default">Reset</button>
+						</div>
+						<div style="clear:both;" ></div>
+					</div>
+					<div id="CollapsePanel1" class="panel-collapse">
+						<div class="panel-body">
+							<form action="" class="form-horizontal">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="txtLoanName" class="control-label col-sm-4">Loan Name </label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" placeholder="Tester, John" id="txtLoanName">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="txtdealno" class="control-label col-sm-4">Deal # </label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" placeholder="99999" id="txtdealno">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="txtfunderloanno" class="control-label col-sm-4">Funder Loan # </label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" placeholder="99999" id="txtfunderloanno">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="txtvariationID" class="control-label col-sm-4">Variation</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" placeholder="99999" id="txtvariationID">
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="txtappdate" class="control-label col-sm-4">Application Date</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" placeholder="20/09/2016" id="txtappdate">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="txtSecurityAdd" class="control-label col-sm-4">Security Address (street only)</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" placeholder="" id="txtSecurityAdd">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="txtdriverlicense" class="control-label col-sm-4">Driver License</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" placeholder="" id="txtdriverlicense">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="txtloanid" class="control-label col-sm-4">Loan ID</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" placeholder="" id="txtloanid">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="txtBranch" class="control-label col-sm-4">Branch</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" placeholder="" id="txtBranch">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="txtApplicationID" class="control-label col-sm-4">Application ID</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" placeholder="" id="txtApplicationID">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="txtSettlement" class="control-label col-sm-4">Settlement Booked</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" placeholder="" id="txtSettlement">
+										</div>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" id="chkShowAll"> Show All
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" id="chkShowOwnerOnly"> Show Owner Application Only
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" id="chkShowSettledDischarge"> Settled/Discharged Applications
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" id="chkShowCancelRejected"> Cancel/Rejected Applications
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>	
+					</div>
+
+				</div>
+				
+					
+					
+					<form action="app_search.asp?action=Search" id="frmApplicationSearch" method="post" name="frmApplicationSearch" >
+								<input TYPE="HIDDEN" name="action" id="action" value="Search"/>
+								<input Type="HIDDEN" id="cDealingID" name="cDealingID" value=""/>
+
+								<div>
+								<div>
+								    <div>
+								        <div class="block"> <!--[974.15-->
+								          <div class="inner"> <!--[974.15-->
+											<table class="linktable" width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr >
+													<th Width="10%">Dealing #</th>
+													<th Width="17%">Loan Name</th> 
+													<th Width="17%">Security Address</th> 
+													<th Width="19%">Product Name</th> 
+													<th Width="12%">Workflow Task</th> 
+													<th Width="12%">Branch</th> 
+													<th Width="10%">Owner</th>
+													<th Width="3%">Variation</th>				
+												</tr>
+										
+										        <tr bgcolor="#FFEFD5">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=2">DJ-2</a></td>
+										            <td width="17%">Ozbaglar, Omer</td>
+										            <td width="17%">1 Dela Cruz StreetBarangay Ginebra </td>		
+										            <td width="19%">Basic Home Loan - Investment Fixed Interest ($560,000)</td>			
+										            <td width="12%">Select Settlement Workflow</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFF5EE">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=3">DJ-3</a></td>
+										            <td width="17%">Stark, Catherine / Stark, Ned</td>
+										            <td width="17%">123 Sample Street<BR>Lot 107/227 - 229 High Street </td>		
+										            <td width="19%">Basic Home Loan - Fixed Interest Only ($336,000)</td>			
+										            <td width="12%">Preconditions Met</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFEFD5">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=4">DJ-4</a></td>
+										            <td width="17%">Logan, Mark / The Iron Throne Pty Ltd / Logan, Beth</td>
+										            <td width="17%">1 Market Street </td>		
+										            <td width="19%">Premium Home Loan ($670,500)</td>			
+										            <td width="12%">File Archived</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            			
+											            <td width="3%"><img style="cursor:hand" onclick="createVariation(4,30)" src="images/icon-refresh.gif"></td><!--[12]-->
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFF5EE">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=5">DJ-5</a></td>
+										            <td width="17%">The Iron Throne Pty Ltd / Targaryen, Daenerys The Unburnt</td>
+										            <td width="17%">106 Killarney Drive </td>		
+										            <td width="19%">Premium Home Loan - Interest Only ($1,260,000)</td>			
+										            <td width="12%">Instructions Received</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFEFD5">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=6">DJ-6</a></td>
+										            <td width="17%">Logan, Mark / Logan, Beth</td>
+										            <td width="17%">1 Market Street </td>		
+										            <td width="19%">Premium Home Loan ($670,500)</td>			
+										            <td width="12%">File Archived</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            			
+											            <td width="3%"><img style="cursor:hand" onclick="createVariation(6,30)" src="images/icon-refresh.gif"></td><!--[12]-->
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFF5EE">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=7">DJ-7</a></td>
+										            <td width="17%">Stark, Catherine Goosebumps / Stark, Neddiel</td>
+										            <td width="17%">123 Sample Street<BR>Lot 107/227 - 229 High Street </td>		
+										            <td width="19%">Basic Home Loan - Fixed Interest Only ($336,000)</td>			
+										            <td width="12%">Instruct Solicitor</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFEFD5">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=8">DJ-8</a></td>
+										            <td width="17%">Tautou, Audrey</td>
+										            <td width="17%">33/44-48 Isabella Street </td>		
+										            <td width="19%">Premium Home Loan ($400,000)</td>			
+										            <td width="12%">Select Settlement Workflow</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFF5EE">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=9">DJ-9</a></td>
+										            <td width="17%">Deng, Ken</td>
+										            <td width="17%">302 437 Bourke Street </td>		
+										            <td width="19%">Basic Home Loan ($961,600)</td>			
+										            <td width="12%">Preconditions Met</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFEFD5">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=10">DJ-10</a></td>
+										            <td width="17%">Bond, James Reid / Lustre, Nadine Samonte</td>
+										            <td width="17%">16 Fantail Crescent </td>		
+										            <td width="19%">Basic Home Loan ($425,600)</td>			
+										            <td width="12%">Instruct Solicitor</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFF5EE">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=11">DJ-11</a></td>
+										            <td width="17%">Bot, Kim Kinim</td>
+										            <td width="17%">23/11 Tba Street </td>		
+										            <td width="19%">Premium Home Loan - Investment ($496,000)</td>			
+										            <td width="12%">Instruct Solicitor</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFEFD5">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=12">DJ-12</a></td>
+										            <td width="17%">Potter, Alex</td>
+										            <td width="17%">96 Ainslie Parade </td>		
+										            <td width="19%">Basic Home Loan - Interest Only ($368,000)</td>			
+										            <td width="12%">File Archived</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFF5EE">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=13">DJ-13</a></td>
+										            <td width="17%">Andrews, Bobby</td>
+										            <td width="17%">18 Mornington Circuit </td>		
+										            <td width="19%">Premium Home Loan - Investment ($420,000)</td>			
+										            <td width="12%">Trust Reconciliation in LEAP</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFEFD5">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=14">DJ-14</a></td>
+										            <td width="17%">Kingking, Ari / Rena, Maki</td>
+										            <td width="17%">8/33 Eastbourne Road </td>		
+										            <td width="19%">Basic Home Loan ($101,500)<BR>Basic Home Loan ($115,000)<BR>Basic Home Loan ($243,500)</td>			
+										            <td width="12%">Instructions Received</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFF5EE">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=15">DJ-15</a></td>
+										            <td width="17%">Thompson, Ben / Johnson, Shannel / Fully Booked</td>
+										            <td width="17%">23 TBA Road </td>		
+										            <td width="19%">Personal Loan - Home Owner ($700,000)</td>			
+										            <td width="12%">Instructions Received</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                		
+										        <tr bgcolor="#FFEFD5">
+								                		
+									            <!--[16] end-->
+
+										            <td width="10%"><a href="app_Main.asp?action=update&amp;iAppID=16">DJ-16</a></td>
+										            <td width="17%">Pepi, Carmel / Law, David</td>
+										            <td width="17%">2G01/131 Dudley Street </td>		
+										            <td width="19%">Personal Loan - Home Owner ($172,200)</td>			
+										            <td width="12%">Trust Reconciliation in LEAP</td>			
+										            <td width="12%">Douros Jackson UAT</td>
+										            <td width="10%">Support, Loanworks</td>
+										            	
+											            <td width="3%"></td>		
+										            	
+										        </tr>
+								                			
+										    </table>
+									      </div>
+								       </div>	
+
+								        
+								    </div>
+								</div>
+					</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
