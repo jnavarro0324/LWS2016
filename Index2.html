@@ -5,52 +5,286 @@
 	<title>LoanWorks - Application Search</title>
 	<link rel="stylesheet" href="css/oneui.css">
 	<link rel="stylesheet" href="css/lw/lw.css">
+
+
 </head>
 <body>
-	<div id="page-container" class="header-navbar-fixed">
-		<!-- Start Header -->
-		<header id="header-navbar" class="content-mini content-mini-full">
-			<ul class="nav-header pull-left">
-				<li>
-					<label class="h4">Loanworks Baseline</label>
-				</li>
-			</ul>
-			<ul class="nav-header pull-right">
-				<li>
-					<div class="btn-group">
-						<button class="btn btn-default btn-image dropdown-toggle">
-							<img src="asset/img/avatars/avatar10.jpg" alt="Avatar">
-							<span class="caret"></span>
-							<ul class="dropdown-menu dropdown-menu-right">
-								<li>Log Out</li>
-							</ul>
-						</button>
+	<div id="page-container" class="sidebar-l sidebar-o side-scroll header-navbar-fixed">
+			<!-- Sidebar -->
+			<nav id="sidebar">
+					<!-- Sidebar Scroll Container -->
+					<div id="sidebar-scroll">
+							<!-- Sidebar Content -->
+							<!-- Adding .sidebar-mini-hide to an element will hide it when the sidebar is in mini mode -->
+							<div class="sidebar-content">
+									<!-- Side Header -->
+									<div class="side-header side-content bg-white-op">
+											<!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+											<button class="btn btn-link text-gray pull-right hidden-md hidden-lg" type="button" data-toggle="layout" data-action="sidebar_close">
+													<i class="fa fa-times"></i>
+											</button>
+											<!-- Themes functionality initialized in App() -> uiHandleTheme() -->
+											<div class="btn-group pull-right">
+													<!--<button class="btn btn-link text-gray dropdown-toggle" data-toggle="dropdown" type="button">
+															<i class="si si-drop"></i>
+													</button>-->
+													<ul class="dropdown-menu dropdown-menu-right font-s13 sidebar-mini-hide">
+															<li>
+																	<a data-toggle="theme" data-theme="default" tabindex="-1" href="javascript:void(0)">
+																			<i class="fa fa-circle text-default pull-right"></i> <span class="font-w600">Default</span>
+																	</a>
+															</li>
+															<li>
+																	<a data-toggle="theme" data-theme="assets/css/themes/amethyst.min.css" tabindex="-1" href="javascript:void(0)">
+																			<i class="fa fa-circle text-amethyst pull-right"></i> <span class="font-w600">Amethyst</span>
+																	</a>
+															</li>
+															<li>
+																	<a data-toggle="theme" data-theme="assets/css/themes/city.min.css" tabindex="-1" href="javascript:void(0)">
+																			<i class="fa fa-circle text-city pull-right"></i> <span class="font-w600">City</span>
+																	</a>
+															</li>
+															<li>
+																	<a data-toggle="theme" data-theme="assets/css/themes/flat.min.css" tabindex="-1" href="javascript:void(0)">
+																			<i class="fa fa-circle text-flat pull-right"></i> <span class="font-w600">Flat</span>
+																	</a>
+															</li>
+															<li>
+																	<a data-toggle="theme" data-theme="assets/css/themes/modern.min.css" tabindex="-1" href="javascript:void(0)">
+																			<i class="fa fa-circle text-modern pull-right"></i> <span class="font-w600">Modern</span>
+																	</a>
+															</li>
+															<li>
+																	<a data-toggle="theme" data-theme="assets/css/themes/smooth.min.css" tabindex="-1" href="javascript:void(0)">
+																			<i class="fa fa-circle text-smooth pull-right"></i> <span class="font-w600">Smooth</span>
+																	</a>
+															</li>
+													</ul>
+											</div>
+											<a class="h5 text-white" href="start_backend.html">
+													<!-- <i class="fa fa-circle-o-notch text-primary"></i> <span class="h4 font-w600 sidebar-mini-hide">ne</span> -->
+													<!-- <span>LW</span> -->
+													<label class="h4">Snorlacks Project</label> <small>Because we lack sleep.</small>
+											</a>
+									</div>
+									<!-- END Side Header -->
+									<!-- Side Content -->
+									<div class="side-content">
+											<ul class="nav-main">
+													<li>
+															<a class="active" href="start_backend.html"><i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span></a>
+													</li>
+													<li>
+															<a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-badge"></i><span class="sidebar-mini-hide">Enquiry</span></a>
+															<ul>
+																	<li>
+																			<a href="javascript:void(0)">Search</a>
+																	</li>
+																	<li>
+																			<a href="javascript:void(0)">Create</a>
+																	</li>
+																	<li>
+																			<a href="javascript:void(0)">Copy</a>
+																	</li>
+																	<li>
+																			<a href="javascript:void(0)">Delete</a>
+																	</li>
+																	<li>
+																			<a href="javascript:void(0)">Tracker</a>
+																	</li>
+															</ul>
+													</li>
+													<li>
+															<a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-badge"></i><span class="sidebar-mini-hide">Application</span></a>
+															<ul>
+																	<li>
+																			<a href="javascript:void(0)">Search</a>
+																	</li>
+																	<li>
+																			<a href="javascript:void(0)">Create</a>
+																	</li>
+																	<li>
+																			<a href="javascript:void(0)">Import</a>
+																	</li>
+																	<li>
+																			<a href="javascript:void(0)">Copy</a>
+																	</li>
+																	<li>
+																			<a href="javascript:void(0)">Delete</a>
+																	</li>
+																	<li>
+																			<a href="javascript:void(0)">Tracker</a>
+																	</li>
+																	<!--<li>
+																			<a class="nav-submenu" data-toggle="nav-submenu" href="#">Blocks</a>
+																			<ul>
+																					<li>
+																							<a href="base_ui_blocks.html">Styles</a>
+																					</li>
+																					<li>
+																							<a href="base_ui_blocks_api.html">Blocks API</a>
+																					</li>
+																					<li>
+																							<a href="base_ui_blocks_draggable.html">Draggable</a>
+																					</li>
+																			</ul>
+																	</li>-->
+															</ul>
+													</li>
+											</ul>
+									</div>
+									<!-- END Side Content -->
+							</div>
+							<!-- Sidebar Content -->
 					</div>
-				</li>
-			</ul>
-		</header>
-		<!-- End Header -->
-		<!-- Main Container -->
-		<main id="main-container">
-			<div class="content bg-gray-lighter">
-				<div class="row">
-					<ul class="nav-header">
-						<li>
-							<a href="#">Processing</a>
-						</li>
-						<li>
-							<a href="#">Reports</a>
-						</li>
-						<li>
-							<a href="#">Tools</a>
-						</li>
-						<li>
-							<a href="#">Management</a>
-						</li>
-					</ul>
+					<!-- END Sidebar Scroll Container -->
+			</nav>
+			<!-- END Sidebar -->
+
+			<header id="header-navbar" class="content-mini content-mini-full">
+				<ul class="nav-header pull-left">
+					<li>
+					</li>
+				</ul>
+				<ul class="nav-header pull-right">
+					<li>
+						<div class="btn-group">
+							<button class="btn btn-default btn-image dropdown-toggle">
+								<img src="assets/img/avatars/avatar10.jpg" alt="Avatar">
+								<span class="caret"></span>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li>Log Out</li>
+								</ul>
+							</button>
+						</div>
+					</li>
+				</ul>
+			</header>
+			<!-- End Header -->
+			<!-- Main Container -->
+			<main id="main-container">
+				<!-- Page Header -->
+				<div class="content bg-gray-lighter">
+						<div class="row items-push">
+								<div class="col-sm-7">
+										<h1 class="page-heading">
+												Create
+										</h1>
+								</div>
+								<div class="col-sm-5 text-right hidden-xs">
+										<ol class="breadcrumb push-10-t">
+												<!--<li>Category</li>
+												<li><a class="link-effect" href="">Page</a></li>-->
+										</ol>
+								</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+									<!-- Static Labels -->
+									<div class="block">
+										<ul class="nav nav-tabs" data-toggle="tabs">
+												<li class="active">
+														<a href="#btabs-animated-fade-home">Summary</a>
+												</li>
+												<li>
+														<a href="#btabs-animated-fade-profile">Profile</a>
+												</li>
+										</ul>
+										<div class="block-content tab-content">
+												<div class="tab-pane fade in active" id="btabs-animated-fade-home">
+														<form class="form-horizontal push-10-t" action="base_forms_elements_modern.html" method="post" onsubmit="return false;">
+																<div class="row">
+																		<div class="col-md-6">
+																				<div class="form-group">
+																						<div class="col-sm-9">
+																								<div class="form-material">
+																										<input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username">
+																										<label for="material-text">Application Class</label>
+																								</div>
+																						</div>
+																				</div>
+																				<div class="form-group">
+																						<div class="col-sm-9">
+																								<div class="form-material">
+																										<input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username">
+																										<label for="material-text">Loan Purpose</label>
+																								</div>
+																						</div>
+																				</div>
+																				<div class="form-group">
+																						<div class="col-sm-9">
+																								<div class="form-material">
+																										<input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username">
+																										<label for="material-text">Program Type</label>
+																								</div>
+																						</div>
+																				</div>
+																		</div>
+
+
+																		<div class="col-md-6">
+																				<div class="form-group">
+																						<div class="col-sm-9">
+																								<div class="form-material">
+																										<input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username">
+																										<label for="material-text">Application Type</label>
+																								</div>
+																						</div>
+																				</div>
+																				<div class="form-group">
+																						<div class="col-sm-9">
+																								<div class="form-material">
+																										<input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username">
+																										<label for="material-text">Propack</label>
+																								</div>
+																						</div>
+																				</div>
+																		</div>
+																</div>
+
+
+
+																<div class="form-group">
+																		<div class="col-sm-9">
+																				<button class="btn btn-sm btn-primary" type="submit">Submit</button>
+																		</div>
+																</div>
+														</form>
+												</div>
+												<div class="tab-pane fade" id="btabs-animated-fade-profile">
+														<h4 class="font-w300 push-15">Profile Tab</h4>
+														<p>Content fades in..</p>
+												</div>
+												<div class="tab-pane fade" id="btabs-animated-fade-settings">
+														<h4 class="font-w300 push-15">Settings Tab</h4>
+														<p>Content fades in..</p>
+												</div>
+										</div>
+									</div>
+									<!-- END Static Labels -->
+							</div>
+						</div>
 				</div>
-			</div>	
-		</main>
+				<!-- END Page Header -->
+			</main>
 	</div>
 </body>
+<!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+<script src="assets/js/core/jquery.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+<script src="assets/js/core/jquery.slimscroll.min.js"></script>
+<script src="assets/js/core/jquery.scrollLock.min.js"></script>
+<script src="assets/js/core/jquery.appear.min.js"></script>
+<script src="assets/js/core/jquery.countTo.min.js"></script>
+<script src="assets/js/core/jquery.placeholder.min.js"></script>
+<script src="assets/js/core/js.cookie.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+<!-- Page Plugins -->
+<script src="assets/js/slick/slick.min.js"></script>
+<!--<script src="assets/js/plugins/chartjs/Chart.min.js"></script>-->
+
+<!-- Page JS Code -->
+<!--<script src="assets/js/pages/base_pages_dashboard.js"></script>-->
 </html>
