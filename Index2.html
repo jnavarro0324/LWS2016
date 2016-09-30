@@ -10,264 +10,505 @@
 </head>
 <body>
 	<div id="page-container" class="sidebar-l sidebar-o side-scroll header-navbar-fixed">
-			<!-- Sidebar -->
-			<nav id="sidebar">
-					<!-- Sidebar Scroll Container -->
-					<div id="sidebar-scroll">
-							<!-- Sidebar Content -->
-							<!-- Adding .sidebar-mini-hide to an element will hide it when the sidebar is in mini mode -->
-							<div class="sidebar-content">
-									<!-- Side Header -->
-									<div class="side-header side-content bg-white-op">
-											<!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
-											<button class="btn btn-link text-gray pull-right hidden-md hidden-lg" type="button" data-toggle="layout" data-action="sidebar_close">
-													<i class="fa fa-times"></i>
-											</button>
-											<!-- Themes functionality initialized in App() -> uiHandleTheme() -->
-											<div class="btn-group pull-right">
-													<!--<button class="btn btn-link text-gray dropdown-toggle" data-toggle="dropdown" type="button">
-															<i class="si si-drop"></i>
-													</button>-->
-													<ul class="dropdown-menu dropdown-menu-right font-s13 sidebar-mini-hide">
-															<li>
-																	<a data-toggle="theme" data-theme="default" tabindex="-1" href="javascript:void(0)">
-																			<i class="fa fa-circle text-default pull-right"></i> <span class="font-w600">Default</span>
-																	</a>
-															</li>
-															<li>
-																	<a data-toggle="theme" data-theme="assets/css/themes/amethyst.min.css" tabindex="-1" href="javascript:void(0)">
-																			<i class="fa fa-circle text-amethyst pull-right"></i> <span class="font-w600">Amethyst</span>
-																	</a>
-															</li>
-															<li>
-																	<a data-toggle="theme" data-theme="assets/css/themes/city.min.css" tabindex="-1" href="javascript:void(0)">
-																			<i class="fa fa-circle text-city pull-right"></i> <span class="font-w600">City</span>
-																	</a>
-															</li>
-															<li>
-																	<a data-toggle="theme" data-theme="assets/css/themes/flat.min.css" tabindex="-1" href="javascript:void(0)">
-																			<i class="fa fa-circle text-flat pull-right"></i> <span class="font-w600">Flat</span>
-																	</a>
-															</li>
-															<li>
-																	<a data-toggle="theme" data-theme="assets/css/themes/modern.min.css" tabindex="-1" href="javascript:void(0)">
-																			<i class="fa fa-circle text-modern pull-right"></i> <span class="font-w600">Modern</span>
-																	</a>
-															</li>
-															<li>
-																	<a data-toggle="theme" data-theme="assets/css/themes/smooth.min.css" tabindex="-1" href="javascript:void(0)">
-																			<i class="fa fa-circle text-smooth pull-right"></i> <span class="font-w600">Smooth</span>
-																	</a>
-															</li>
-													</ul>
-											</div>
-											<a class="h5 text-white" href="start_backend.html">
-													<!-- <i class="fa fa-circle-o-notch text-primary"></i> <span class="h4 font-w600 sidebar-mini-hide">ne</span> -->
-													<!-- <span>LW</span> -->
-													<label class="h4">Snorlacks Project</label> <small>Because we lack sleep.</small>
-											</a>
-									</div>
-									<!-- END Side Header -->
-									<!-- Side Content -->
-									<div class="side-content">
-											<ul class="nav-main">
-													<li>
-															<a class="active" href="start_backend.html"><i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span></a>
-													</li>
-													<li>
-															<a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-badge"></i><span class="sidebar-mini-hide">Enquiry</span></a>
-															<ul>
-																	<li>
-																			<a href="javascript:void(0)">Search</a>
-																	</li>
-																	<li>
-																			<a href="javascript:void(0)">Create</a>
-																	</li>
-																	<li>
-																			<a href="javascript:void(0)">Copy</a>
-																	</li>
-																	<li>
-																			<a href="javascript:void(0)">Delete</a>
-																	</li>
-																	<li>
-																			<a href="javascript:void(0)">Tracker</a>
-																	</li>
-															</ul>
-													</li>
-													<li>
-															<a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-badge"></i><span class="sidebar-mini-hide">Application</span></a>
-															<ul>
-																	<li>
-																			<a href="javascript:void(0)">Search</a>
-																	</li>
-																	<li>
-																			<a href="javascript:void(0)">Create</a>
-																	</li>
-																	<li>
-																			<a href="javascript:void(0)">Import</a>
-																	</li>
-																	<li>
-																			<a href="javascript:void(0)">Copy</a>
-																	</li>
-																	<li>
-																			<a href="javascript:void(0)">Delete</a>
-																	</li>
-																	<li>
-																			<a href="javascript:void(0)">Tracker</a>
-																	</li>
-																	<!--<li>
-																			<a class="nav-submenu" data-toggle="nav-submenu" href="#">Blocks</a>
-																			<ul>
-																					<li>
-																							<a href="base_ui_blocks.html">Styles</a>
-																					</li>
-																					<li>
-																							<a href="base_ui_blocks_api.html">Blocks API</a>
-																					</li>
-																					<li>
-																							<a href="base_ui_blocks_draggable.html">Draggable</a>
-																					</li>
-																			</ul>
-																	</li>-->
-															</ul>
-													</li>
-											</ul>
-									</div>
-									<!-- END Side Content -->
-							</div>
-							<!-- Sidebar Content -->
-					</div>
-					<!-- END Sidebar Scroll Container -->
-			</nav>
-			<!-- END Sidebar -->
-
-			<header id="header-navbar" class="content-mini content-mini-full">
-				<ul class="nav-header pull-left">
-					<li>
-					</li>
-				</ul>
-				<ul class="nav-header pull-right">
-					<li>
-						<div class="btn-group">
-							<button class="btn btn-default btn-image dropdown-toggle">
-								<img src="assets/img/avatars/avatar10.jpg" alt="Avatar">
-								<span class="caret"></span>
-								<ul class="dropdown-menu dropdown-menu-right">
-									<li>Log Out</li>
-								</ul>
-							</button>
-						</div>
-					</li>
-				</ul>
-			</header>
-			<!-- End Header -->
-			<!-- Main Container -->
-			<main id="main-container">
-				<!-- Page Header -->
-				<div class="content bg-gray-lighter">
-						<div class="row items-push">
-								<div class="col-sm-7">
-										<h1 class="page-heading">
-												Create
-										</h1>
+		<!-- Sidebar -->
+		<nav id="sidebar">
+				<!-- Sidebar Scroll Container -->
+				<div id="sidebar-scroll">
+						<!-- Sidebar Content -->
+						<!-- Adding .sidebar-mini-hide to an element will hide it when the sidebar is in mini mode -->
+						<div class="sidebar-content">
+								<!-- Side Header -->
+								<div class="side-header side-content bg-white-op">
+										<!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+										<button class="btn btn-link text-gray pull-right hidden-md hidden-lg" type="button" data-toggle="layout" data-action="sidebar_close">
+												<i class="fa fa-times"></i>
+										</button>
+										<!-- Themes functionality initialized in App() -> uiHandleTheme() -->
+										<div class="btn-group pull-right">
+												<!--<button class="btn btn-link text-gray dropdown-toggle" data-toggle="dropdown" type="button">
+														<i class="si si-drop"></i>
+												</button>-->
+												<ul class="dropdown-menu dropdown-menu-right font-s13 sidebar-mini-hide">
+														<li>
+																<a data-toggle="theme" data-theme="default" tabindex="-1" href="javascript:void(0)">
+																		<i class="fa fa-circle text-default pull-right"></i> <span class="font-w600">Default</span>
+																</a>
+														</li>
+														<li>
+																<a data-toggle="theme" data-theme="assets/css/themes/amethyst.min.css" tabindex="-1" href="javascript:void(0)">
+																		<i class="fa fa-circle text-amethyst pull-right"></i> <span class="font-w600">Amethyst</span>
+																</a>
+														</li>
+														<li>
+																<a data-toggle="theme" data-theme="assets/css/themes/city.min.css" tabindex="-1" href="javascript:void(0)">
+																		<i class="fa fa-circle text-city pull-right"></i> <span class="font-w600">City</span>
+																</a>
+														</li>
+														<li>
+																<a data-toggle="theme" data-theme="assets/css/themes/flat.min.css" tabindex="-1" href="javascript:void(0)">
+																		<i class="fa fa-circle text-flat pull-right"></i> <span class="font-w600">Flat</span>
+																</a>
+														</li>
+														<li>
+																<a data-toggle="theme" data-theme="assets/css/themes/modern.min.css" tabindex="-1" href="javascript:void(0)">
+																		<i class="fa fa-circle text-modern pull-right"></i> <span class="font-w600">Modern</span>
+																</a>
+														</li>
+														<li>
+																<a data-toggle="theme" data-theme="assets/css/themes/smooth.min.css" tabindex="-1" href="javascript:void(0)">
+																		<i class="fa fa-circle text-smooth pull-right"></i> <span class="font-w600">Smooth</span>
+																</a>
+														</li>
+												</ul>
+										</div>
+										<a class="h5 text-white" href="start_backend.html">
+												<!-- <i class="fa fa-circle-o-notch text-primary"></i> <span class="h4 font-w600 sidebar-mini-hide">ne</span> -->
+												<!-- <span>LW</span> -->
+												<label class="h4">Snorlacks Project</label> <small>Because we lack sleep.</small>
+										</a>
 								</div>
-								<div class="col-sm-5 text-right hidden-xs">
-										<ol class="breadcrumb push-10-t">
-												<!--<li>Category</li>
-												<li><a class="link-effect" href="">Page</a></li>-->
-										</ol>
-								</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-12">
-									<!-- Static Labels -->
-									<div class="block">
-										<ul class="nav nav-tabs" data-toggle="tabs">
-												<li class="active">
-														<a href="#btabs-animated-fade-home">Summary</a>
+								<!-- END Side Header -->
+								<!-- Side Content -->
+								<div class="side-content">
+										<ul class="nav-main">
+												<li>
+														<a class="active" href="start_backend.html"><i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span></a>
 												</li>
 												<li>
-														<a href="#btabs-animated-fade-profile">Profile</a>
+														<a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-badge"></i><span class="sidebar-mini-hide">Enquiry</span></a>
+														<ul>
+																<li>
+																		<a href="javascript:void(0)">Search</a>
+																</li>
+																<li>
+																		<a href="javascript:void(0)">Create</a>
+																</li>
+																<li>
+																		<a href="javascript:void(0)">Copy</a>
+																</li>
+																<li>
+																		<a href="javascript:void(0)">Delete</a>
+																</li>
+																<li>
+																		<a href="javascript:void(0)">Tracker</a>
+																</li>
+														</ul>
+												</li>
+												<li>
+														<a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-badge"></i><span class="sidebar-mini-hide">Application</span></a>
+														<ul>
+																<li>
+																		<a href="javascript:void(0)">Search</a>
+																</li>
+																<li>
+																		<a href="javascript:void(0)">Create</a>
+																</li>
+																<li>
+																		<a href="javascript:void(0)">Import</a>
+																</li>
+																<li>
+																		<a href="javascript:void(0)">Copy</a>
+																</li>
+																<li>
+																		<a href="javascript:void(0)">Delete</a>
+																</li>
+																<li>
+																		<a href="javascript:void(0)">Tracker</a>
+																</li>
+																<!--<li>
+																		<a class="nav-submenu" data-toggle="nav-submenu" href="#">Blocks</a>
+																		<ul>
+																				<li>
+																						<a href="base_ui_blocks.html">Styles</a>
+																				</li>
+																				<li>
+																						<a href="base_ui_blocks_api.html">Blocks API</a>
+																				</li>
+																				<li>
+																						<a href="base_ui_blocks_draggable.html">Draggable</a>
+																				</li>
+																		</ul>
+																</li>-->
+														</ul>
 												</li>
 										</ul>
-										<div class="block-content tab-content">
-												<div class="tab-pane fade in active" id="btabs-animated-fade-home">
-														<form class="form-horizontal push-10-t" action="base_forms_elements_modern.html" method="post" onsubmit="return false;">
-																<div class="row">
-																		<div class="col-md-6">
-																				<div class="form-group">
-																						<div class="col-sm-9">
-																								<div class="form-material">
-																										<input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username">
-																										<label for="material-text">Application Class</label>
-																								</div>
-																						</div>
-																				</div>
-																				<div class="form-group">
-																						<div class="col-sm-9">
-																								<div class="form-material">
-																										<input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username">
-																										<label for="material-text">Loan Purpose</label>
-																								</div>
-																						</div>
-																				</div>
-																				<div class="form-group">
-																						<div class="col-sm-9">
-																								<div class="form-material">
-																										<input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username">
-																										<label for="material-text">Program Type</label>
-																								</div>
-																						</div>
-																				</div>
-																		</div>
+								</div>
+								<!-- END Side Content -->
+						</div>
+						<!-- Sidebar Content -->
+				</div>
+				<!-- END Sidebar Scroll Container -->
+		</nav>
+		<!-- END Sidebar -->
 
+		<header id="header-navbar" class="content-mini content-mini-full">
+			<ul class="nav-header pull-left">
+				<li>
+				</li>
+			</ul>
+			<ul class="nav-header pull-right">
+				<li>
+					<div class="btn-group">
+						<button class="btn btn-default btn-image dropdown-toggle">
+							<img src="assets/img/avatars/avatar10.jpg" alt="Avatar">
+							<span class="caret"></span>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>Log Out</li>
+							</ul>
+						</button>
+					</div>
+				</li>
+			</ul>
+		</header>
+		<!-- End Header -->
+		<!-- Main Container -->
+		<main id="main-container">
 
-																		<div class="col-md-6">
-																				<div class="form-group">
-																						<div class="col-sm-9">
-																								<div class="form-material">
-																										<input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username">
-																										<label for="material-text">Application Type</label>
-																								</div>
-																						</div>
-																				</div>
-																				<div class="form-group">
-																						<div class="col-sm-9">
-																								<div class="form-material">
-																										<input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username">
-																										<label for="material-text">Propack</label>
-																								</div>
-																						</div>
-																				</div>
+			<div class="content bg-gray-lighter">
+				<div class="row items-push">
+							<div class="col-sm-7">
+									<h1 class="page-heading">
+											Create
+									</h1>
+							</div>
+					</div>
+
+				<div class="row">
+					<div class="col-md-12">
+								<!-- Static Labels -->
+						<div class="block">
+							<ul class="nav nav-tabs" data-toggle="tabs">
+									<li class="active">
+											<a href="#btabs-animated-fade-home">Summary</a>
+									</li>
+									<li>
+											<a href="#btabs-animated-fade-profile">Profile</a>
+									</li>
+							</ul>
+							<div class="block-content tab-content">
+								<div class="tab-pane fade in active" id="btabs-animated-fade-home">
+									<form class="form-horizontal push-10-t" action="base_forms_elements_modern.html" method="post" onsubmit="return false;">
+										<div class="row">
+												<div class="col-md-6">
+														<div class="form-group">
+																<div class="col-sm-9">
+																		<div class="form-material floating">
+																				<!-- <input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username"> -->
+																				<select class="form-control" id="material-select2" name="material-select2" size="1">
+																					<option value="-1"></option>
+																					<option value=2>Car Loan</option>
+																					<option value=1>Mortgage</option>
+																					<option value=3>Personal Loan</option>
+																				</select>
+																				<label for="material-text">Application Class</label>
 																		</div>
 																</div>
+														</div>
+														<div class="form-group">
+															<div class="col-sm-9">
+																	<div class="form-material">
+																		<select class="form-control"   id="iLoanPurpose" name="iLoanPurpose" size="1">
+																			<option value='-1'></option>
+																			<option  value='5'>Business</option>
+																			<option  value='8'>Cash out</option>
+																			<option  value='7'>Commercial</option>
+																			<option  value='14'>Construction Loan</option>
+																			<option  value='10'>Family Pledge Loan</option>
+																			<option  value='6'>Future investment</option>
+																			<option  value='2'>Investment</option>
+																			<option  value='13'>Loans to Unit Trusts</option>
+																			<option  value='9'>Metricon: Invesment / Owner Occupied</option>
+																			<option  value='4'>Mixed</option>
+																			<option  value='1'>Owner Occupied</option>
+																			<option  value='12'>Vacant Land/Off the Plan</option>
+																		</select>
 
-
-
-																<div class="form-group">
-																		<div class="col-sm-9">
-																				<button class="btn btn-sm btn-primary" type="submit">Submit</button>
+																		<label for="material-text">Loan Purpose</label>
+																	</div>
+															</div>
+														</div>
+														<div class="form-group">
+																<div class="col-sm-9">
+																		<div class="form-material">
+																			<select class="form-control" size="1">
+																				<option value="-1"></option>
+																				<option value=5>Not Applicable</option>
+																				<option value=3>Easy Doc</option>
+																				<option value=1>Full Doc</option>
+																				<option value=4>Full Doc NGS</option>
+																				<option value=2>Lo Doc</option>
+																			</select>
+																			<label for="material-text">Program Type</label>
 																		</div>
 																</div>
-														</form>
+														</div>
 												</div>
-												<div class="tab-pane fade" id="btabs-animated-fade-profile">
-														<h4 class="font-w300 push-15">Profile Tab</h4>
-														<p>Content fades in..</p>
-												</div>
-												<div class="tab-pane fade" id="btabs-animated-fade-settings">
-														<h4 class="font-w300 push-15">Settings Tab</h4>
-														<p>Content fades in..</p>
+
+
+												<div class="col-md-6">
+														<div class="form-group">
+																<div class="col-sm-9">
+																		<div class="form-material">
+																				<input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username">
+																				<label for="material-text">Application Type</label>
+																		</div>
+																</div>
+														</div>
+														<div class="form-group">
+																<div class="col-sm-9">
+																		<div class="form-material">
+																				<input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username">
+																				<label for="material-text">Propack</label>
+																		</div>
+																</div>
+														</div>
 												</div>
 										</div>
-									</div>
-									<!-- END Static Labels -->
+
+										<!-- Sub Content Link BEGIN -->
+										<a class="scroll" id="additional_summary" href="#sub_summary">
+											<div class="row" style="padding: 10px 0px; margin: 0px 0px; background-color: antiquewhite;">
+												<div class="col-md-6">
+													Additional Information
+												</div>
+												<div class="col-md-6">
+													<span class="pull-right">Show</span>
+												</div>
+											</div>
+										</a>
+										<!-- Sub Content Link END -->
+
+										<!-- Sub Content BEGIN -->
+										<section id="sub_summary" class="row hide-content" style="padding-top:20px;">
+											<div class="col-md-6">
+													<div class="form-group">
+															<div class="col-sm-9">
+																	<div class="form-material floating">
+																			<!-- <input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username"> -->
+																			<textarea class="form-control" id="material-textarea-small2" name="material-textarea-small2" rows="3" onkeyup="autoexpand(this)"></textarea>
+																			<label for="material-text">Loan Notes</label>
+																	</div>
+															</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-9">
+																<div class="form-material">
+																	<select class="form-control"   id="iLoanPurpose" name="iLoanPurpose" size="1">
+																		<option value='-1'></option>
+																		<option  value='5'>Business</option>
+																		<option  value='8'>Cash out</option>
+																		<option  value='7'>Commercial</option>
+																		<option  value='14'>Construction Loan</option>
+																		<option  value='10'>Family Pledge Loan</option>
+																		<option  value='6'>Future investment</option>
+																		<option  value='2'>Investment</option>
+																		<option  value='13'>Loans to Unit Trusts</option>
+																		<option  value='9'>Metricon: Invesment / Owner Occupied</option>
+																		<option  value='4'>Mixed</option>
+																		<option  value='1'>Owner Occupied</option>
+																		<option  value='12'>Vacant Land/Off the Plan</option>
+																	</select>
+
+																	<label for="material-text">Loan Purpose</label>
+																</div>
+														</div>
+													</div>
+													<div class="form-group">
+															<div class="col-sm-9">
+																	<div class="form-material">
+																		<select class="form-control" size="1">
+																			<option value="-1"></option>
+																			<option value=5>Not Applicable</option>
+																			<option value=3>Easy Doc</option>
+																			<option value=1>Full Doc</option>
+																			<option value=4>Full Doc NGS</option>
+																			<option value=2>Lo Doc</option>
+																		</select>
+																		<label for="material-text">Program Type</label>
+																	</div>
+															</div>
+													</div>
+													<div class="form-group">
+															<div class="col-sm-9">
+																	<div class="form-material floating">
+																			<!-- <input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username"> -->
+																			<textarea class="form-control" id="material-textarea-small2" name="material-textarea-small2" rows="3" onkeyup="autoexpand(this)"></textarea>
+																			<label for="material-text">Loan Notes</label>
+																	</div>
+															</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-9">
+																<div class="form-material">
+																	<select class="form-control"   id="iLoanPurpose" name="iLoanPurpose" size="1">
+																		<option value='-1'></option>
+																		<option  value='5'>Business</option>
+																		<option  value='8'>Cash out</option>
+																		<option  value='7'>Commercial</option>
+																		<option  value='14'>Construction Loan</option>
+																		<option  value='10'>Family Pledge Loan</option>
+																		<option  value='6'>Future investment</option>
+																		<option  value='2'>Investment</option>
+																		<option  value='13'>Loans to Unit Trusts</option>
+																		<option  value='9'>Metricon: Invesment / Owner Occupied</option>
+																		<option  value='4'>Mixed</option>
+																		<option  value='1'>Owner Occupied</option>
+																		<option  value='12'>Vacant Land/Off the Plan</option>
+																	</select>
+
+																	<label for="material-text">Loan Purpose</label>
+																</div>
+														</div>
+													</div>
+													<div class="form-group">
+															<div class="col-sm-9">
+																	<div class="form-material">
+																		<select class="form-control" size="1">
+																			<option value="-1"></option>
+																			<option value=5>Not Applicable</option>
+																			<option value=3>Easy Doc</option>
+																			<option value=1>Full Doc</option>
+																			<option value=4>Full Doc NGS</option>
+																			<option value=2>Lo Doc</option>
+																		</select>
+																		<label for="material-text">Program Type</label>
+																	</div>
+															</div>
+													</div>
+													<div class="form-group">
+															<div class="col-sm-9">
+																	<div class="form-material floating">
+																			<!-- <input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username"> -->
+																			<textarea class="form-control" id="material-textarea-small2" name="material-textarea-small2" rows="3" onkeyup="autoexpand(this)"></textarea>
+																			<label for="material-text">Loan Notes</label>
+																	</div>
+															</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-9">
+																<div class="form-material">
+																	<select class="form-control"   id="iLoanPurpose" name="iLoanPurpose" size="1">
+																		<option value='-1'></option>
+																		<option  value='5'>Business</option>
+																		<option  value='8'>Cash out</option>
+																		<option  value='7'>Commercial</option>
+																		<option  value='14'>Construction Loan</option>
+																		<option  value='10'>Family Pledge Loan</option>
+																		<option  value='6'>Future investment</option>
+																		<option  value='2'>Investment</option>
+																		<option  value='13'>Loans to Unit Trusts</option>
+																		<option  value='9'>Metricon: Invesment / Owner Occupied</option>
+																		<option  value='4'>Mixed</option>
+																		<option  value='1'>Owner Occupied</option>
+																		<option  value='12'>Vacant Land/Off the Plan</option>
+																	</select>
+
+																	<label for="material-text">Loan Purpose</label>
+																</div>
+														</div>
+													</div>
+													<div class="form-group">
+															<div class="col-sm-9">
+																	<div class="form-material">
+																		<select class="form-control" size="1">
+																			<option value="-1"></option>
+																			<option value=5>Not Applicable</option>
+																			<option value=3>Easy Doc</option>
+																			<option value=1>Full Doc</option>
+																			<option value=4>Full Doc NGS</option>
+																			<option value=2>Lo Doc</option>
+																		</select>
+																		<label for="material-text">Program Type</label>
+																	</div>
+															</div>
+													</div>
+											</div>
+											<div class="col-md-6">
+													<div class="form-group">
+															<div class="col-sm-9">
+																	<div class="form-material floating">
+																			<!-- <input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter your username"> -->
+																			<select class="form-control" id="material-select2" name="material-select2" size="1">
+																				<option value="-1"></option>
+																				<option value=2>Car Loan</option>
+																				<option value=1>Mortgage</option>
+																				<option value=3>Personal Loan</option>
+																			</select>
+																			<label for="material-text">Application Class</label>
+																	</div>
+															</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-9">
+																<div class="form-material">
+																	<select class="form-control"   id="iLoanPurpose" name="iLoanPurpose" size="1">
+																		<option value='-1'></option>
+																		<option  value='5'>Business</option>
+																		<option  value='8'>Cash out</option>
+																		<option  value='7'>Commercial</option>
+																		<option  value='14'>Construction Loan</option>
+																		<option  value='10'>Family Pledge Loan</option>
+																		<option  value='6'>Future investment</option>
+																		<option  value='2'>Investment</option>
+																		<option  value='13'>Loans to Unit Trusts</option>
+																		<option  value='9'>Metricon: Invesment / Owner Occupied</option>
+																		<option  value='4'>Mixed</option>
+																		<option  value='1'>Owner Occupied</option>
+																		<option  value='12'>Vacant Land/Off the Plan</option>
+																	</select>
+
+																	<label for="material-text">Loan Purpose</label>
+																</div>
+														</div>
+													</div>
+													<div class="form-group">
+															<div class="col-sm-9">
+																	<div class="form-material">
+																		<select class="form-control" size="1">
+																			<option value="-1"></option>
+																			<option value=5>Not Applicable</option>
+																			<option value=3>Easy Doc</option>
+																			<option value=1>Full Doc</option>
+																			<option value=4>Full Doc NGS</option>
+																			<option value=2>Lo Doc</option>
+																		</select>
+																		<label for="material-text">Program Type</label>
+																	</div>
+															</div>
+													</div>
+											</div>
+										</section>
+										<!-- Sub Content END -->
+
+										<!-- Submit Button BEGIN -->
+										<div id="sticker">
+											<div class="row">
+												<div class="col-sm-12">
+													<button class="btn btn-sm btn-primary" type="submit">Submit</button>
+												</div>
+											</div>
+										</div>
+										<!-- Submit Button END -->
+									</form>
+								</div>
 							</div>
 						</div>
+								<!-- END Static Labels -->
+					</div>
 				</div>
-				<!-- END Page Header -->
-			</main>
+			</div>
+
+		</main>
+		<!-- Footer -->
+		<footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
+				<div class="pull-right">
+						Crafted with <i class="fa fa-heart text-city"></i> by <a class="font-w600" href="http://goo.gl/vNS3I" target="_blank">pixelcave</a>
+				</div>
+				<div class="pull-left">
+						<a class="font-w600" href="javascript:void(0)" target="_blank">OneUI 1.0</a> &copy; <span class="js-year-copy"></span>
+				</div>
+		</footer>
+		<!-- END Footer -->
 	</div>
 </body>
 <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
@@ -287,4 +528,65 @@
 
 <!-- Page JS Code -->
 <!--<script src="assets/js/pages/base_pages_dashboard.js"></script>-->
+<script>
+	$(document).ready(function() {
+		var s = $("#sticker");
+		var pos = s.position();
+		var stickermax = $(document).outerHeight() - $("#page-footer").outerHeight() - s.outerHeight() - 40; //40 value is the total of the top and bottom margin
+
+		$(window).scroll(function() {
+			var windowpos = $(window).scrollTop();
+			//s.html("Distance from top:" + pos.top + "<br />Scroll position: " + windowpos);
+			if (windowpos >= pos.top && windowpos < stickermax) {
+				s.attr("style", ""); //kill absolute positioning
+				s.addClass("stick"); //stick it
+			} else if (windowpos >= stickermax) {
+				s.removeClass(); //un-stick
+				s.css({position: "absolute", top: stickermax + "px"}); //set sticker right above the footer
+
+			} else {
+				s.removeClass(); //top of page
+			}
+		});
+		//alert(stickermax); //uncomment to show max sticker postition value on doc.ready
+	});
+
+	$(".scroll").click(function(event){
+			event.preventDefault();
+			//calculate destination place
+			var dest=0;
+
+			console.log("Top: ", $(this.hash).offset().top);
+			console.log("Doc Height: ", $(document).height(), " Win Height: ", $(window).height());
+
+			if($(this.hash).offset().top > $(document).height()-$(window).height()){
+					 dest=$(document).height()-$(window).height();
+			}else{
+					 dest=$(this.hash).offset().top - 20;
+			}
+			//go to destination
+			//$('html,body').animate({scrollTop:dest}, 1000,'swing');
+			$('body').animate({scrollTop:dest}, 1000,'swing');
+
+	});
+
+
+	function autoexpand(d){
+		d.style.height = d.scrollHeight + 'px';
+		console.log("text height: ", globalVar);
+	}
+
+	$("#additional_summary").on("click", function(){
+		var a = $("#sub_summary").hasClass("hide-content");
+
+		if (a == true) {
+			$("#sub_summary").removeClass("hide-content");
+			$("#sub_summary").addClass("show-content");
+		} else {
+			$("#sub_summary").removeClass("show-content");
+			$("#sub_summary").addClass("hide-content ");
+		}
+
+	});
+</script>
 </html>
